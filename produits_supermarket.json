@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "art014-riz-ngonda-25-50kg",
+    "reference": "ART014",
+    "nom": "Riz Ngonda 25% 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Unité",
+    "prix": 19700,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art925-anice-vert-70g",
+    "reference": "ART925",
+    "nom": "Anice Vert 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art283-arome-foster-clarck-bouteil-detail",
+    "reference": "ART283",
+    "nom": "Arome Foster Clarck Bouteil Detail",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Bouteille",
+    "prix": 233,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art929-arrachides-5l",
+    "reference": "ART929",
+    "nom": "Arrachides 5L",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Sachet",
+    "prix": 2360,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1003-baron-de-madrid",
+    "reference": "ART1003",
+    "nom": "Baron De Madrid",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Carton",
+    "prix": 1000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art284-beignet-crevettes-30pcs",
+    "reference": "ART284",
+    "nom": "Beignet CREVETTES*30PCS",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Sachet",
+    "prix": 383,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1010-beurre-jadida-450g",
+    "reference": "ART1010",
+    "nom": "Beurre Jadida 450G",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 1317,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art287-beurre-vale-d-or-500g-12-detail",
+    "reference": "ART287",
+    "nom": "Beurre Vale D'or 500G*12 Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Emballage",
+    "prix": 875,
+    "devise": "FCFA"
+  },
+  {
+    "id": "6191-beurre-valee-d-or-1000g-6-detail",
+    "reference": "6191",
+    "nom": "Beurre Valee D Or 1000G*6 Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Pièce",
+    "prix": 1667,
+    "devise": "FCFA"
+  },
+  {
+    "id": "6193-beurre-valee-d-or-2-7kg",
+    "reference": "6193",
+    "nom": "Beurre Valee D Or 2.7KG",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 363,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art286-beurre-valee-d-or-12-250g",
+    "reference": "ART286",
+    "nom": "Beurre Valee D'or 12*250G",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Pièce",
+    "prix": 553,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art292-beurre-valee-d-or-5-kilos",
+    "reference": "ART292",
+    "nom": "Beurre Valee D'or 5 Kilos",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 5000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art518-mar-bijou-thai-5-50kg",
+    "reference": "ART518_MAR",
+    "nom": "Bijou Thai 5% 50KG",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Sac",
+    "prix": 20200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art462-biscuit-bitter-cookies",
+    "reference": "ART462",
+    "nom": "Biscuit Bitter Cookies",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 40,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art697-biscuit-duo",
+    "reference": "ART697",
+    "nom": "Biscuit Duo",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 1300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art949-biscuit-naya-mixte-38g",
+    "reference": "ART949",
+    "nom": "Biscuit Naya Mixte 38G",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 41,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art460-biscuit-parle-g-gm-315",
+    "reference": "ART460",
+    "nom": "Biscuit Parle G Gm 315",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 39,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art459-biscuit-parle-g-pm-14g",
+    "reference": "ART459",
+    "nom": "Biscuit Parle G Pm 14G",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 20,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art461-biscuit-parle-o-choco",
+    "reference": "ART461",
+    "nom": "Biscuit Parle O Choco",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 40,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art298-bonbon-naya-50-10paquet",
+    "reference": "ART298",
+    "nom": "Bonbon Naya 50*10PAQUET",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Unité",
+    "prix": 920,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art964-bonbon-naya-detail",
+    "reference": "ART964",
+    "nom": "Bonbon Naya Detail",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 18,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art299-bonbon-popipop",
+    "reference": "ART299",
+    "nom": "Bonbon Popipop",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 80,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art300-bougie-annivaissaire-6-20-cm",
+    "reference": "ART300",
+    "nom": "Bougie Annivaissaire *6 20 Cm",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Emballage",
+    "prix": 333,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art301-bougie-annivaissaire-6-30cm",
+    "reference": "ART301",
+    "nom": "Bougie Annivaissaire *6 30CM",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 417,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art302-bougie-super-light-30pqt-8-detail",
+    "reference": "ART302",
+    "nom": "Bougie Super Light 30PQT*8 Detail",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 350,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art924-canelles-70g",
+    "reference": "ART924",
+    "nom": "Canelles 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 803,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art432-champagne-hugo-75cl-6",
+    "reference": "ART432",
+    "nom": "Champagne Hugo 75CL*6",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 3083,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art431-champagne-lambrini",
+    "reference": "ART431",
+    "nom": "Champagne Lambrini",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 3000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art430-champagne-maria-7cl-6",
+    "reference": "ART430",
+    "nom": "Champagne Maria 7CL*6",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art309-champignon-mahi-400g-24",
+    "reference": "ART309",
+    "nom": "Champignon Mahi 400G*24",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Pièce",
+    "prix": 875,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art308-champignon-mahi-800g-detail-12",
+    "reference": "ART308",
+    "nom": "Champignon Mahi 800G DETAIL*12",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Pièce",
+    "prix": 1583,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art312-choco-tarti-broli-800g-6",
+    "reference": "ART312",
+    "nom": "Choco Tarti Broli 800G*6",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 2000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art315-chocolat-en-boite-chocojoy-12-750g-detail",
+    "reference": "ART315",
+    "nom": "Chocolat En Boite Chocojoy 12*750G Detail",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 1650,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art314-chocolat-en-boite-chocojoy-18-400g-detail",
+    "reference": "ART314",
+    "nom": "Chocolat En Boite Chocojoy 18*400G Detail",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 933,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art321-chocolat-yummy-225g-20",
+    "reference": "ART321",
+    "nom": "Chocolat Yummy 225G*20",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 602,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art320-chocolat-yummy-400g-12",
+    "reference": "ART320",
+    "nom": "Chocolat Yummy 400G*12",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 1004,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art316-chocolat-yummy-pat-450g-12",
+    "reference": "ART316",
+    "nom": "Chocolat Yummy Pat 450G*12",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Carton",
+    "prix": 1128,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art909-clou-de-jirophe-70g",
+    "reference": "ART909",
+    "nom": "Clou De Jirophe 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 803,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art914-coreande-45g",
+    "reference": "ART914",
+    "nom": "Coreande 45g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art915-coreandre-65g",
+    "reference": "ART915",
+    "nom": "Coreandre 65g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art934-corvina-s-15kg",
+    "reference": "ART934",
+    "nom": "Corvina S 15KG",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1633,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art324-couche-molfix-3-detail-paquet",
+    "reference": "ART324",
+    "nom": "Couche Molfix 3 Detail (paquet)",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Emballage",
+    "prix": 67,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1046-couche-softcare-moyen-n2",
+    "reference": "ART1046",
+    "nom": "Couche Softcare Moyen N°2",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 3133,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1037-couche-softcare-moyen-n3",
+    "reference": "ART1037",
+    "nom": "Couche Softcare Moyen N°3",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 3150,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1036-couche-softcare-moyen-n4",
+    "reference": "ART1036",
+    "nom": "Couche Softcare Moyen N°4",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 3167,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art989-couche-softcare-n-3",
+    "reference": "ART989",
+    "nom": "Couche Softcare N° 3",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Emballage",
+    "prix": 5667,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art990-couche-softcare-n2",
+    "reference": "ART990",
+    "nom": "Couche Softcare N°2",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Emballage",
+    "prix": 5667,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art948-couche-softcare-n4-3-pqts-81",
+    "reference": "ART948",
+    "nom": "Couche Softcare N°4 3 Pqts * 81",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Emballage",
+    "prix": 5667,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art984-cube-aroma-detail",
+    "reference": "ART984",
+    "nom": "Cube Aroma Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Pièce",
+    "prix": 7,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art983-cube-aroma-detail-doub",
+    "reference": "ART983",
+    "nom": "Cube Aroma Detail Doub",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Pièce",
+    "prix": 7,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art326-cube-aroma-original-en-poudre-12g-detail",
+    "reference": "ART326",
+    "nom": "Cube Aroma Original En Poudre 12G Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Sachet",
+    "prix": 136,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art325-cube-aroma-original-paquet",
+    "reference": "ART325",
+    "nom": "Cube Aroma Original Paquet",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Sachet",
+    "prix": 350,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art954-cube-maggi-etoile-4g-100-025",
+    "reference": "ART954",
+    "nom": "Cube Maggi Etoile 4G * 100 *025",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Sachet",
+    "prix": 833,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art923-curcuma-50g",
+    "reference": "ART923",
+    "nom": "Curcuma 50g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 530,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1002-cuvee-du-roi-rouge-1l-12",
+    "reference": "ART1002",
+    "nom": "Cuvee Du Roi Rouge 1L*12",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Carton",
+    "prix": 1042,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art483-dental-floss-12",
+    "reference": "ART483",
+    "nom": "Dental FLOSS*12",
+    "categorie": "Hygiène Corporelle",
+    "conditionnement": "Pièce",
+    "prix": 167,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art335-dentifrice-triple-action-70g-detail",
+    "reference": "ART335",
+    "nom": "Dentifrice Triple Action 70G Detail",
+    "categorie": "Hygiène Corporelle",
+    "conditionnement": "Pièce",
+    "prix": 708,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art520-mar-det-bril-1kg",
+    "reference": "ART520_MAR",
+    "nom": "Det Bril 1KG",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sac",
+    "prix": 1292,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art455-det-bril-25g",
+    "reference": "ART455",
+    "nom": "Det Bril 25g",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Pièce",
+    "prix": 36,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art336-det-brille-24-450g-detail",
+    "reference": "ART336",
+    "nom": "Det Brille 24*450G Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Emballage",
+    "prix": 625,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art720-det-madar",
+    "reference": "ART720",
+    "nom": "Det Madar",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sachet",
+    "prix": 35,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art721-det-ozil",
+    "reference": "ART721",
+    "nom": "Det Ozil",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sachet",
+    "prix": 36,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art338-det-sim-glass-750ml-12-detail",
+    "reference": "ART338",
+    "nom": "Det Sim Glass 750ML*12 Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Bouteille",
+    "prix": 750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art339-det-sim-wash-100g-detail",
+    "reference": "ART339",
+    "nom": "Det Sim Wash 100G Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sachet",
+    "prix": 100,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art340-det-sim-wash-1kg-12-detail",
+    "reference": "ART340",
+    "nom": "Det Sim Wash 1KG*12 Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sachet",
+    "prix": 917,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art341-det-sim-wash-5kg-4-sac-detail",
+    "reference": "ART341",
+    "nom": "Det Sim Wash 5KG*4 (sac)detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Sac",
+    "prix": 4500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art485-det-ozil-12-x-900-g",
+    "reference": "ART485",
+    "nom": "Det. Ozil 12 X 900 G",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Pièce",
+    "prix": 1125,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art913-djinga-50g",
+    "reference": "ART913",
+    "nom": "Djinga 50g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 757,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art350-eau-opur-0-5l-detail",
+    "reference": "ART350",
+    "nom": "Eau Opur 0.5L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 142,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art349-eau-opur-1-5l-detail",
+    "reference": "ART349",
+    "nom": "Eau Opur 1.5L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 191,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art348-eau-supermont-0-5l-detail",
+    "reference": "ART348",
+    "nom": "Eau Supermont 0.5L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 154,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art347-eau-supermont-1-5l-detail",
+    "reference": "ART347",
+    "nom": "Eau Supermont 1.5L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 223,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art353-eau-ultime-lightn-0-5l-12",
+    "reference": "ART353",
+    "nom": "Eau Ultime Lightn 0.5L*12",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 108,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art344-eau-vital-0-5l-12",
+    "reference": "ART344",
+    "nom": "Eau Vital 0.5L*12",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 125,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art933-eau-vital-1-5l-detail",
+    "reference": "ART933",
+    "nom": "Eau Vital 1.5L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art345-eau-vital-10l",
+    "reference": "ART345",
+    "nom": "Eau Vital 10L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 900,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1011-farine-asso-25kg",
+    "reference": "ART1011",
+    "nom": "Farine Asso 25KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 9500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art367-farine-yana-1kg-detail",
+    "reference": "ART367",
+    "nom": "Farine Yana 1KG Detail",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Emballage",
+    "prix": 450,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art916-fenouille-50g",
+    "reference": "ART916",
+    "nom": "Fenouille 50g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art917-fenouille-70g",
+    "reference": "ART917",
+    "nom": "Fenouille 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art465-fourchette-jetables",
+    "reference": "ART465",
+    "nom": "Fourchette Jetables",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Pièce",
+    "prix": 825,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art361-france-lait-1-detail",
+    "reference": "ART361",
+    "nom": "France Lait 1 Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 3933,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art362-france-lait-2-detail",
+    "reference": "ART362",
+    "nom": "France Lait 2 Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 3933,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art360-france-lait-250g-detail",
+    "reference": "ART360",
+    "nom": "France Lait 250G Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 1592,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art359-france-lait-confort-2-detail-400g",
+    "reference": "ART359",
+    "nom": "France Lait Confort 2 Detail 400G",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 4025,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art358-france-lait3-croissance-400g",
+    "reference": "ART358",
+    "nom": "France LAIT3 Croissance 400G",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Bouteille",
+    "prix": 3667,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art711-gamelles",
+    "reference": "ART711",
+    "nom": "Gamelles",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Emballage",
+    "prix": 90,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art953-gros-sillure",
+    "reference": "ART953",
+    "nom": "Gros Sillure",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art927-haricot-1kg",
+    "reference": "ART927",
+    "nom": "Haricot 1KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sachet",
+    "prix": 500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art987-haricot-5l",
+    "reference": "ART987",
+    "nom": "Haricot 5L",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Emballage",
+    "prix": 2458,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art920-herbe-de-province-35g",
+    "reference": "ART920",
+    "nom": "Herbe De Province 35g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art921-herbe-de-province-50g",
+    "reference": "ART921",
+    "nom": "Herbe De Province 50g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art366-huile-d-olive-bertini-500ml-detail",
+    "reference": "ART366",
+    "nom": "Huile D'olive Bertini 500ML Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 2292,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art063-huile-mayor-1l-detail",
+    "reference": "ART063",
+    "nom": "Huile Mayor 1L Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 1387,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art982-huile-mayor-5l",
+    "reference": "ART982",
+    "nom": "Huile Mayor 5L",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bidon",
+    "prix": 7400,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art371-huile-noix-palmiste-lice-0-25l-detail",
+    "reference": "ART371",
+    "nom": "Huile Noix Palmiste Lice 0.25L Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 450,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art370-huile-noix-palmiste-lice-0-5l",
+    "reference": "ART370",
+    "nom": "Huile Noix Palmiste Lice 0.5L",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art369-huile-noix-palmiste-lice-1l-detail",
+    "reference": "ART369",
+    "nom": "Huile Noix Palmiste Lice 1L Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 1300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art058-huile-oleo-1l-15-detail",
+    "reference": "ART058",
+    "nom": "Huile Oleo 1L*15 Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 1350,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art057-huile-oleo-20l",
+    "reference": "ART057",
+    "nom": "Huile Oleo 20L",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bouteille",
+    "prix": 23578,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art059-huile-oleo-3l-bidon-detail",
+    "reference": "ART059",
+    "nom": "Huile Oleo 3L*BIDON Detail",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bidon",
+    "prix": 3833,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art994-huile-oleo-5l",
+    "reference": "ART994",
+    "nom": "Huile Oleo 5L",
+    "categorie": "Huiles & Matières Grasses",
+    "conditionnement": "Bidon",
+    "prix": 6300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art373-javel-la-croix-250ml-24-detail",
+    "reference": "ART373",
+    "nom": "Javel La Croix 250ML*24 Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Pièce",
+    "prix": 373,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art375-javel-la-croix-700ml-12-8paquet-detail",
+    "reference": "ART375",
+    "nom": "Javel La Croix 700ML*12*(8paquet) Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Bouteille",
+    "prix": 83,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art986-javel-lacroix-5l",
+    "reference": "ART986",
+    "nom": "Javel Lacroix 5L",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Bidon",
+    "prix": 3425,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art951-jus-canette-3x",
+    "reference": "ART951",
+    "nom": "Jus Canette 3X",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 562,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art276-jus-coca-cola-1l-en-detail",
+    "reference": "ART276",
+    "nom": "Jus Coca Cola 1L En Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 483,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art716-jus-fanta-30-cl",
+    "reference": "ART716",
+    "nom": "Jus Fanta 30 Cl",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 242,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art265-jus-fanta-detail",
+    "reference": "ART265",
+    "nom": "Jus Fanta Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 400,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art950-jus-frutas-1l",
+    "reference": "ART950",
+    "nom": "Jus Frutas 1L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 792,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art262-jus-malta-vanpur-0-5cl-24-canette-detail",
+    "reference": "ART262",
+    "nom": "Jus Malta Vanpur 0.5CL*24 Canette Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 646,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art258-jus-planette-0-35l-12-2d-2tro-detail",
+    "reference": "ART258",
+    "nom": "Jus Planette 0.35L*12 2D 2TRO Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art251-jus-reactor-12-1-2l-detail",
+    "reference": "ART251",
+    "nom": "Jus Reactor 12*1/2L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 342,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art715-jus-sprite-30-cl",
+    "reference": "ART715",
+    "nom": "Jus Sprite 30 Cl",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 242,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art232-jus-top-1-2-detail",
+    "reference": "ART232",
+    "nom": "Jus Top 1/2 Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art231-jus-top-1l-detail",
+    "reference": "ART231",
+    "nom": "Jus Top 1L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 393,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art719-lait-broli-1kg-detail",
+    "reference": "ART719",
+    "nom": "Lait Broli 1KG Detail",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Pièce",
+    "prix": 1202,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art395-lait-broli-15g-150",
+    "reference": "ART395",
+    "nom": "Lait Broli 15G*150",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Unité",
+    "prix": 80,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art702-lait-guigoz-1",
+    "reference": "ART702",
+    "nom": "Lait Guigoz 1",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 1917,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art703-lait-guigoz-2",
+    "reference": "ART703",
+    "nom": "Lait Guigoz 2",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 1917,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art706-lait-nan-confort-1",
+    "reference": "ART706",
+    "nom": "Lait Nan Confort 1",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 4603,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art707-lait-nan-confort-2",
+    "reference": "ART707",
+    "nom": "Lait Nan Confort 2",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 4603,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art704-lait-nan-opti-pro-1",
+    "reference": "ART704",
+    "nom": "Lait Nan Opti Pro 1",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 4143,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art705-lait-nan-opti-pro-2",
+    "reference": "ART705",
+    "nom": "Lait Nan Opti Pro 2",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 4143,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art941-lait-pavani-24-1kg",
+    "reference": "ART941",
+    "nom": "Lait Pavani 24 * 1KG",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 1125,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art993-levure-activa-11g-100-6",
+    "reference": "ART993",
+    "nom": "Levure Activa 11G*100*6",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Sachet",
+    "prix": 212,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art398-levure-nevada-450g-detail",
+    "reference": "ART398",
+    "nom": "Levure Nevada 450G Detail",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Unité",
+    "prix": 1250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1045-lingettes-softcare-12-80",
+    "reference": "ART1045",
+    "nom": "Lingettes Softcare 12*80",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 625,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art937-lingettes-softcare-20-40",
+    "reference": "ART937",
+    "nom": "Lingettes Softcare 20 * 40",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 325,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art464-mac-armanti",
+    "reference": "ART464",
+    "nom": "Mac Armanti",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 170,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art490-mac-barka-coud-ray-250g-detail",
+    "reference": "ART490",
+    "nom": "Mac Barka Coud Ray 250G Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Sachet",
+    "prix": 153,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art692-mac-barka-tortille",
+    "reference": "ART692",
+    "nom": "Mac Barka Tortille",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Emballage",
+    "prix": 162,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art491-mac-petit-chef-250-detail",
+    "reference": "ART491",
+    "nom": "Mac Petit Chef 250 Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Sachet",
+    "prix": 170,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art492-maccaroni-spaghetto-250g-detail",
+    "reference": "ART492",
+    "nom": "Maccaroni Spaghetto 250G Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Sachet",
+    "prix": 168,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art700-mar-maggi-crevette-24-60",
+    "reference": "ART700_MAR",
+    "nom": "Maggi Crevette 24*60",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 1487,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art699-mar-maggi-cube-25-100",
+    "reference": "ART699_MAR",
+    "nom": "Maggi Cube 25*100",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 833,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art928-mais-1kg",
+    "reference": "ART928",
+    "nom": "Mais 1KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Pièce",
+    "prix": 300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art443-mais-doux-broli-400g-gros",
+    "reference": "ART443",
+    "nom": "Mais Doux Broli 400G Gros",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Bouteille",
+    "prix": 656,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art981-mais-doux-broli-800g",
+    "reference": "ART981",
+    "nom": "Mais Doux Broli 800G",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Pièce",
+    "prix": 1250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art445-mais-doux-mahi-400g-d",
+    "reference": "ART445",
+    "nom": "Mais Doux Mahi 400G D",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Bouteille",
+    "prix": 625,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art930-mais-sceau-5l",
+    "reference": "ART930",
+    "nom": "Mais Sceau 5L",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Pièce",
+    "prix": 1200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art469-mambo-au-lait",
+    "reference": "ART469",
+    "nom": "Mambo Au Lait",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Sachet",
+    "prix": 745,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art942-maquereau-600-950",
+    "reference": "ART942",
+    "nom": "Maquereau 600/950",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1900,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art947-margarine-roma-500ml-6",
+    "reference": "ART947",
+    "nom": "Margarine Roma 500ML * 6",
+    "categorie": "Produits Laitiers & Lait Infantile",
+    "conditionnement": "Carton",
+    "prix": 833,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art468-matina-sleeve-760g",
+    "reference": "ART468",
+    "nom": "Matina Sleeve 760G",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 3441,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art473-matinal-200g",
+    "reference": "ART473",
+    "nom": "Matinal 200g",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 1191,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art474-matinal-400g",
+    "reference": "ART474",
+    "nom": "Matinal 400g",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 2066,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art177-mayon-armenti-1kg-detail",
+    "reference": "ART177",
+    "nom": "Mayon Armenti 1KG Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 2750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art172-mayon-armenti-500g-detail",
+    "reference": "ART172",
+    "nom": "Mayon Armenti 500G Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 1333,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art169-mayon-broli-12-250ml",
+    "reference": "ART169",
+    "nom": "Mayon Broli 12*250ML",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 833,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art170-mayon-broli-1kg-detail",
+    "reference": "ART170",
+    "nom": "Mayon Broli 1KG Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 2583,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art164-mayon-broli-500ml-detail",
+    "reference": "ART164",
+    "nom": "Mayon Broli 500ML Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 1312,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1039-mais-doux-carla-400g",
+    "reference": "ART1039",
+    "nom": "Maïs Doux Carla 400G",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Pièce",
+    "prix": 583,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1040-mais-doux-carla-800g",
+    "reference": "ART1040",
+    "nom": "Maïs Doux Carla 800G",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Pièce",
+    "prix": 1167,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art494-medinaps-m10-detail",
+    "reference": "ART494",
+    "nom": "Medinaps M10 Detail",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 4500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art191-moutarde-broli-1kg-detail",
+    "reference": "ART191",
+    "nom": "Moutarde Broli 1KG Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Carton",
+    "prix": 2750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1041-moutarde-broli-370g",
+    "reference": "ART1041",
+    "nom": "Moutarde Broli 370G",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Pièce",
+    "prix": 1250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1038-moutarde-roma-1l",
+    "reference": "ART1038",
+    "nom": "Moutarde Roma 1L",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Pièce",
+    "prix": 2494,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art709-nescafe-3-en-1-breakfast-15-10-32g",
+    "reference": "ART709",
+    "nom": "Nescafe 3 En 1 Breakfast 15*10*32G",
+    "categorie": "Café, Thé & Petit-Déjeuner",
+    "conditionnement": "Carton",
+    "prix": 228,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art701-nescafe-classic-chain-12-150",
+    "reference": "ART701",
+    "nom": "Nescafe Classic Chain 12*150",
+    "categorie": "Café, Thé & Petit-Déjeuner",
+    "conditionnement": "Sachet",
+    "prix": 58,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art936-oeufs-detail",
+    "reference": "ART936",
+    "nom": "Oeufs Detail",
+    "categorie": "Café, Thé & Petit-Déjeuner",
+    "conditionnement": "Pièce",
+    "prix": 63,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art364-olives-noir-2",
+    "reference": "ART364",
+    "nom": "Olives NOIR*2",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Bouteille",
+    "prix": 1542,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art695-opur-10l",
+    "reference": "ART695",
+    "nom": "Opur 10L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bidon",
+    "prix": 900,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art696-paper-cup-50pcs",
+    "reference": "ART696",
+    "nom": "Paper Cup 50pcs",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Sachet",
+    "prix": 1675,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art403-papier-alluminum-50m",
+    "reference": "ART403",
+    "nom": "Papier Alluminum 50m",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Emballage",
+    "prix": 1200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art405-papier-film-alimentaire-100m-detail",
+    "reference": "ART405",
+    "nom": "Papier Film Alimentaire 100M Detail",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Emballage",
+    "prix": 1200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1051-papier-hyg-tiof-premium-6-rouleaux",
+    "reference": "ART1051",
+    "nom": "Papier Hyg Tiof Premium 6 Rouleaux",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Pièce",
+    "prix": 240,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art407-papier-hyg-tiof-premium-8-6-rouleaux",
+    "reference": "ART407",
+    "nom": "Papier Hyg Tiof Premium 8*6 Rouleaux",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Emballage",
+    "prix": 2000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art406-papier-hygenique-tiof-4-rouleau-detail",
+    "reference": "ART406",
+    "nom": "Papier Hygenique Tiof 4 Rouleau Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Emballage",
+    "prix": 917,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art922-paprika",
+    "reference": "ART922",
+    "nom": "Paprika",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 712,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art410-pax-citron-800ml-detail",
+    "reference": "ART410",
+    "nom": "Pax Citron 800ML Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 1200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art411-pax-classic-2l-detail",
+    "reference": "ART411",
+    "nom": "Pax Classic 2L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 2767,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art912-pepe-70g",
+    "reference": "ART912",
+    "nom": "Pepe 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 530,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art412-petit-poids-broli24-400g-detail",
+    "reference": "ART412",
+    "nom": "Petit Poids BROLI24*400G Detail",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Bouteille",
+    "prix": 575,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art413-petit-pois-carla-400g-detail",
+    "reference": "ART413",
+    "nom": "Petit Pois Carla 400G Detail",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Bouteille",
+    "prix": 625,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art453-ph-sita",
+    "reference": "ART453",
+    "nom": "Ph Sita",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Emballage",
+    "prix": 238,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art417-pile-abc-gm-detail-divers",
+    "reference": "ART417",
+    "nom": "Pile Abc Gm Detail Divers",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Bouteille",
+    "prix": 400,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art415-pile-abc-pm-divers",
+    "reference": "ART415",
+    "nom": "Pile Abc Pm Divers",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 271,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art343-pipette-100",
+    "reference": "ART343",
+    "nom": "PIPETTE*100",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 800,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art260-planette-1-20l-detail",
+    "reference": "ART260",
+    "nom": "Planette 1,20L Detail",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bouteille",
+    "prix": 385,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art952-poisson-pomme",
+    "reference": "ART952",
+    "nom": "Poisson Pomme",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1450,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art926-poivre-blanc-70g",
+    "reference": "ART926",
+    "nom": "Poivre Blanc 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 803,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art918-poivre-noir-50g",
+    "reference": "ART918",
+    "nom": "Poivre Noir 50g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 757,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art919-poivre-noir-70g",
+    "reference": "ART919",
+    "nom": "Poivre Noir 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 757,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art988-paper-cups-detail",
+    "reference": "ART988",
+    "nom": "Paper Cups Détail",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Pièce",
+    "prix": 34,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art502-riz-bijou-thail-5-25-kg",
+    "reference": "ART502",
+    "nom": "Riz Bijou Thail. 5 % 25 Kg",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 10200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art509-riz-sana-25-indien-50-kg",
+    "reference": "ART509",
+    "nom": "Riz Sana 25 % Indien 50 Kg",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 17500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art044-riz-armanti-1kg-detail",
+    "reference": "ART044",
+    "nom": "Riz Armanti 1KG Detail",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 1542,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art974-riz-belles-graines",
+    "reference": "ART974",
+    "nom": "Riz Belles Graines",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 11500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1023-riz-bijou-gold-viet-22-5kg",
+    "reference": "ART1023",
+    "nom": "Riz Bijou Gold Viet 22.5KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 15976,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1054-riz-bijou-gold-viet-perf-4-5-kg-x-5",
+    "reference": "ART1054",
+    "nom": "Riz Bijou Gold Viet Perf 4.5 Kg X 5",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 3414,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art010-riz-blanc-broli-5-5kg",
+    "reference": "ART010",
+    "nom": "Riz Blanc Broli 5*5KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sachet",
+    "prix": 7300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art504-riz-broli-1kg-detail",
+    "reference": "ART504",
+    "nom": "Riz Broli 1KG Detail",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 1500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art046-riz-broli-5kg-detail",
+    "reference": "ART046",
+    "nom": "Riz Broli 5KG Detail",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 7200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1020-riz-elephant-25-50kg",
+    "reference": "ART1020",
+    "nom": "Riz Elephant 25% 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 15660,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1021-riz-elephant-5-50kg",
+    "reference": "ART1021",
+    "nom": "Riz Elephant 5% 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 17160,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art518-riz-ketty-50kg",
+    "reference": "ART518",
+    "nom": "Riz Ketty 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 18500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art031-riz-lune-d-afrique-5-indien-25kg",
+    "reference": "ART031",
+    "nom": "Riz Lune D'afrique 5% Indien 25KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 9471,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1024-riz-lune-d-afrique-5-indien-50kg",
+    "reference": "ART1024",
+    "nom": "Riz Lune D'afrique 5% Indien 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 17366,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1055-riz-main-dans-la-main-50kg",
+    "reference": "ART1055",
+    "nom": "Riz Main Dans La Main 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 16071,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1022-riz-meme-casse-25kg",
+    "reference": "ART1022",
+    "nom": "Riz Meme Casse 25KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 16376,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art722-riz-ngonda-thai-25kg",
+    "reference": "ART722",
+    "nom": "Riz Ngonda Thai 25KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 7205,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art991-riz-viet-moi-casse-5-5kg",
+    "reference": "ART991",
+    "nom": "Riz Viet Moi Casse 5*5KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Sac",
+    "prix": 2400,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art938-rohu-3-5-ind-10kg",
+    "reference": "ART938",
+    "nom": "Rohu 3/5 Ind 10KG",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1200,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art935-rohu-800-chine-10kg",
+    "reference": "ART935",
+    "nom": "Rohu 800+ Chine 10KG",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1600,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art910-romarin-45g",
+    "reference": "ART910",
+    "nom": "Romarin 45g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 621,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art911-rondelle-70g",
+    "reference": "ART911",
+    "nom": "Rondelle 70g",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 985,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art522-mar-sardine-confort-pim-50",
+    "reference": "ART522_MAR",
+    "nom": "Sardine Confort PIM*50",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Pièce",
+    "prix": 334,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art456-sardine-costa-pim-50",
+    "reference": "ART456",
+    "nom": "Sardine Costa PIM*50",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 330,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art992-sardine-roma-pimentee-125g-50",
+    "reference": "ART992",
+    "nom": "Sardine Roma Pimentee 125G*50",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Pièce",
+    "prix": 320,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art521-mar-sardine-so-nice-pimente-50",
+    "reference": "ART521_MAR",
+    "nom": "Sardine So Nice PIMENTE*50",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Pièce",
+    "prix": 334,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art129-savon-azur-350g-60detail",
+    "reference": "ART129",
+    "nom": "Savon Azur 350G*60DETAIL",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 287,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art123-savon-azur-36-700g-detail",
+    "reference": "ART123",
+    "nom": "Savon Azur 36*700G Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 575,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art126-savon-azur-400g-60detail",
+    "reference": "ART126",
+    "nom": "Savon Azur 400G*60DETAIL",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 325,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art510-savon-cel-or-300g",
+    "reference": "ART510",
+    "nom": "Savon Cel'or 300G",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Morceau",
+    "prix": 295,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art133-savon-kado-360g-detail",
+    "reference": "ART133",
+    "nom": "Savon Kado 360G Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 300,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1009-savon-mayor-360g-60",
+    "reference": "ART1009",
+    "nom": "Savon Mayor 360G*60",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 292,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art512-savon-mekako-100g-detail",
+    "reference": "ART512",
+    "nom": "Savon Mekako 100G Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Morceau",
+    "prix": 900,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1025-savon-sanet-350g",
+    "reference": "ART1025",
+    "nom": "Savon Sanet 350G",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Morceau",
+    "prix": 327,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1034-savon-sanet-700g-36",
+    "reference": "ART1034",
+    "nom": "Savon Sanet 700G*36",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Morceau",
+    "prix": 564,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art137-savon-uno-300-detail",
+    "reference": "ART137",
+    "nom": "Savon Uno 300 Detail",
+    "categorie": "Entretien & Hygiène Maison",
+    "conditionnement": "Carton",
+    "prix": 301,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art698-mar-schweppes-agrumes-1l",
+    "reference": "ART698_MAR",
+    "nom": "Schweppes Agrumes 1L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Emballage",
+    "prix": 542,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art943-scotch-vtm-300-yarres-36-pieces",
+    "reference": "ART943",
+    "nom": "Scotch Vtm 300 Yarres * 36 Pieces",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 1500,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art985-sel-18kg-sac",
+    "reference": "ART985",
+    "nom": "Sel 18KG Sac",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Sac",
+    "prix": 181,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art422-sel-diamant-fin-1kg-detail",
+    "reference": "ART422",
+    "nom": "Sel Diamant Fin 1KG Detail",
+    "categorie": "Épices & Assaisonnements",
+    "conditionnement": "Pièce",
+    "prix": 220,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art424-serviette-de-table-fay-12-paquet-essu-tout",
+    "reference": "ART424",
+    "nom": "Serviette De Table Fay 12 Paquet(essu Tout)",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Pièce",
+    "prix": 708,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art454-serviette-fay-18pqt-100",
+    "reference": "ART454",
+    "nom": "Serviette Fay 18PQT*100",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Emballage",
+    "prix": 611,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1001-serviette-hygienique-softcare-violet",
+    "reference": "ART1001",
+    "nom": "Serviette Hygienique Softcare Violet",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Pièce",
+    "prix": 312,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art112-spa-barka-20-500g-detail",
+    "reference": "ART112",
+    "nom": "Spa Barka 20*500G Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Pieces",
+    "prix": 325,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art095-spa-pasta-5kg",
+    "reference": "ART095",
+    "nom": "Spa Pasta 5KG",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 4000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art090-spa-pasta-gold-500g-20-detail",
+    "reference": "ART090",
+    "nom": "Spa Pasta Gold 500G*20 Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 506,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art087-spa-salaka-20-500g",
+    "reference": "ART087",
+    "nom": "Spa Salaka 20*500G",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 325,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art074-spa-spaghetto-250g",
+    "reference": "ART074",
+    "nom": "Spa Spaghetto 250G",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 175,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art093-spaguetti-pasta-first-500g-detail",
+    "reference": "ART093",
+    "nom": "Spaguetti Pasta First 500G Detail",
+    "categorie": "Pâtes Alimentaires",
+    "conditionnement": "Carton",
+    "prix": 370,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art372-spirale-belle-vie-60",
+    "reference": "ART372",
+    "nom": "Spirale Belle VIE*60",
+    "categorie": "Épicerie Générale",
+    "conditionnement": "Carton",
+    "prix": 267,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art476-stylo-blue",
+    "reference": "ART476",
+    "nom": "Stylo Blue",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Pièce",
+    "prix": 77,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art397-sucre-activa-detail",
+    "reference": "ART397",
+    "nom": "Sucre Activa Detail",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Emballage",
+    "prix": 212,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art458-sucre-tatie-carreaux",
+    "reference": "ART458",
+    "nom": "Sucre Tatie Carreaux",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Pièce",
+    "prix": 752,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art396-sucre-tatie-sachet-roux-1kg-25-detail",
+    "reference": "ART396",
+    "nom": "Sucre Tatie Sachet Roux 1KG *25 Detail",
+    "categorie": "Sucreries & Levure",
+    "conditionnement": "Sachet",
+    "prix": 721,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art693-supermont-0-33l",
+    "reference": "ART693",
+    "nom": "Supermont 0.33L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Emballage",
+    "prix": 96,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art694-supermont-10l",
+    "reference": "ART694",
+    "nom": "Supermont 10L",
+    "categorie": "Boissons & Eaux",
+    "conditionnement": "Bidon",
+    "prix": 1000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art940-sylver-croaker-100-200-10kg",
+    "reference": "ART940",
+    "nom": "Sylver Croaker 100/200 10KG",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1450,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art939-sylver-croaker-100-200-10kg",
+    "reference": "ART939",
+    "nom": "Sylver Croaker 100/200 10KG",
+    "categorie": "Poissons, Conserves de Poisson & Fruits de Mer",
+    "conditionnement": "Carton",
+    "prix": 1450,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art311-tarti-broli-400g-6",
+    "reference": "ART311",
+    "nom": "Tarti Broli 400G*6",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Emballage",
+    "prix": 1000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1005-tartina-10kg",
+    "reference": "ART1005",
+    "nom": "Tartina 10KG",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 16800,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1042-tartina-380g",
+    "reference": "ART1042",
+    "nom": "Tartina 380G",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 1292,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art471-tartina-740g",
+    "reference": "ART471",
+    "nom": "Tartina 740G",
+    "categorie": "Confiseries, Biscuits & Chocolats",
+    "conditionnement": "Pièce",
+    "prix": 1983,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art946-the-vert-bf-25-10",
+    "reference": "ART946",
+    "nom": "The Vert Bf 25 * 10",
+    "categorie": "Café, Thé & Petit-Déjeuner",
+    "conditionnement": "Carton",
+    "prix": 1250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art200-tomate-broli-400g-detail",
+    "reference": "ART200",
+    "nom": "Tomate Broli 400G Detail",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Carton",
+    "prix": 529,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art199-tomate-broli-800g-detail",
+    "reference": "ART199",
+    "nom": "Tomate Broli 800G Detail",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Carton",
+    "prix": 1083,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art201-tomates-belles-tomate-50",
+    "reference": "ART201",
+    "nom": "Tomates Belles TOMATE*50",
+    "categorie": "Conserves & Légumes",
+    "conditionnement": "Carton",
+    "prix": 69,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art438-vin-blanc-real-detail",
+    "reference": "ART438",
+    "nom": "Vin Blanc Real Detail",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2033,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art434-vin-consigna-rouge-75cl-6",
+    "reference": "ART434",
+    "nom": "Vin Consigna Rouge 75CL*6",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2250,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art945-vin-le-vieux-moulin-blanc-bout-6-75cl",
+    "reference": "ART945",
+    "nom": "Vin Le Vieux Moulin Blanc Bout 6 * 75CL",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 1583,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art944-vin-le-vieux-moulin-rouge-bout-6-75cl",
+    "reference": "ART944",
+    "nom": "Vin Le Vieux Moulin Rouge Bout 6 * 75CL",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 1417,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art433-vin-rouge-long-bordeau-detail",
+    "reference": "ART433",
+    "nom": "Vin Rouge Long Bordeau Detail",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 5000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art426-vinaigre-1l-rose-detail",
+    "reference": "ART426",
+    "nom": "Vinaigre 1L Rose Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Bouteille",
+    "prix": 233,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art427-vinaigre-500ml-24-detail",
+    "reference": "ART427",
+    "nom": "Vinaigre 500ML*24 Detail",
+    "categorie": "Sauces & Condiments",
+    "conditionnement": "Bouteille",
+    "prix": 150,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art1004-vinosol",
+    "reference": "ART1004",
+    "nom": "Vinosol",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Carton",
+    "prix": 1000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art479-whisky-blue-regions",
+    "reference": "ART479",
+    "nom": "Whisky Blue Regions",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2541,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art441-wisky-old-rum-detail",
+    "reference": "ART441",
+    "nom": "Wisky Old Rum Detail",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2462,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art442-wisky-vermuti-rosso-detail",
+    "reference": "ART442",
+    "nom": "Wisky Vermuti Rosso Detail",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 3533,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art688-el-vino-blanc",
+    "reference": "ART688",
+    "nom": "El Vino Blanc",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Pièce",
+    "prix": 976,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art689-el-vino-rouge",
+    "reference": "ART689",
+    "nom": "El Vino Rouge",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Pièce",
+    "prix": 883,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art399-lingette-happy-baby-36",
+    "reference": "ART399",
+    "nom": "Lingette Happy baby*36",
+    "categorie": "Hygiène Bébé & Féminine",
+    "conditionnement": "Emballage",
+    "prix": 750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art402-papier-alluminuim-30m",
+    "reference": "ART402",
+    "nom": "Papier Alluminuim 30M",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Emballage",
+    "prix": 750,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art404-papier-filme-alimentaire-30m",
+    "reference": "ART404",
+    "nom": "Papier Filme Alimentaire 30m",
+    "categorie": "Papier & Jetables",
+    "conditionnement": "Sachet",
+    "prix": 550,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art475-stylo-rouge",
+    "reference": "ART475",
+    "nom": "Stylo Rouge",
+    "categorie": "Divers & Accessoires",
+    "conditionnement": "Carton",
+    "prix": 77,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art435-vin-mouseux-florida",
+    "reference": "ART435",
+    "nom": "Vin Mouseux Florida",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2000,
+    "devise": "FCFA"
+  },
+  {
+    "id": "art437-vin-vino-real-rouge-75cl-6",
+    "reference": "ART437",
+    "nom": "Vin Vino Real Rouge 75cl*6",
+    "categorie": "Boissons Alcoolisées",
+    "conditionnement": "Bouteille",
+    "prix": 2033,
+    "devise": "FCFA"
+  }
+]
