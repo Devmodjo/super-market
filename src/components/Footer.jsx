@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Facebook, Phone, MapPin, Clock, ArrowUp, MessageSquare } from 'lucide-react';
-import { OFFICIAL_WHATSAPP_NUMBER } from '../utils/whatsapp';
+import { OFFICIAL_ORDER_WHATSAPP_NUMBER, FOOTER_CONTACT_NUMBER, FOOTER_CONTACT_NUMBER_CLEAN } from '../utils/whatsapp';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -41,11 +41,12 @@ export default function Footer() {
               </a>
 
               <a
-                href={`https://wa.me/${OFFICIAL_WHATSAPP_NUMBER}`}
+                href={`https://wa.me/${OFFICIAL_ORDER_WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors border border-slate-800"
-                aria-label="Contact WhatsApp SUPERMARKET"
+                aria-label="Contact Commandes WhatsApp SUPERMARKET"
+                title="Commandes WhatsApp: 692649775"
               >
                 <MessageSquare className="w-5 h-5" />
               </a>
@@ -83,7 +84,20 @@ export default function Footer() {
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Standard : +237 690 00 00 00</span>
+                <a href={`tel:+${FOOTER_CONTACT_NUMBER_CLEAN}`} className="hover:text-emerald-400 transition-colors">
+                  Contact Site : <strong className="text-slate-200">{FOOTER_CONTACT_NUMBER}</strong>
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageSquare className="w-4 h-4 text-emerald-500 shrink-0" />
+                <a 
+                  href={`https://wa.me/${OFFICIAL_ORDER_WHATSAPP_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="hover:text-emerald-400 transition-colors"
+                >
+                  Commandes WhatsApp : <strong className="text-slate-200">+237 692 64 97 75</strong>
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-amber-500 shrink-0" />

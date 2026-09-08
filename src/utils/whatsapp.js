@@ -1,7 +1,11 @@
 import { formatPrice } from './productData';
 
-// Official SUPERMARKET WhatsApp Order Receiver phone number (Yaoundé Central Agency)
-export const OFFICIAL_WHATSAPP_NUMBER = '237690000000'; 
+// Official SUPERMARKET Phone Numbers
+// Order Receiver WhatsApp Phone Number: +237 692 64 97 75
+export const OFFICIAL_ORDER_WHATSAPP_NUMBER = '237692649775';
+export const OFFICIAL_WHATSAPP_NUMBER = OFFICIAL_ORDER_WHATSAPP_NUMBER; 
+export const FOOTER_CONTACT_NUMBER = '+237 694 47 01 59';
+export const FOOTER_CONTACT_NUMBER_CLEAN = '237694470159';
 export const OFFICIAL_COMMUNITY_LINK = 'https://chat.whatsapp.com/SuperMarketCommunityCM';
 
 /**

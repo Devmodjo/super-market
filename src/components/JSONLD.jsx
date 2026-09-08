@@ -8,7 +8,7 @@ export default function JSONLD({ products = [] }) {
     "image": "https://super-market.pro/assets/logo.png",
     "@id": "https://super-market.pro/#organization",
     "url": "https://super-market.pro/",
-    "telephone": "+237690000000",
+    "telephone": "+237694470159",
     "priceRange": "FCFA",
     "sameAs": [
       "https://www.facebook.com/Super-Market-Sarl"
