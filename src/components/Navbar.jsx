@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingBag, MessageSquare, Menu, X, Facebook, PhoneCall, ChevronRight } from 'lucide-react';
+import { ShoppingBag, MessageSquare, Menu, X, Facebook, PhoneCall, ChevronRight, Briefcase } from 'lucide-react';
 import { OFFICIAL_WHATSAPP_NUMBER } from '../utils/whatsapp';
 
 export default function Navbar({ onOpenWhatsAppModal }) {
@@ -22,10 +22,10 @@ export default function Navbar({ onOpenWhatsAppModal }) {
 
   const navLinks = [
     { name: 'Accueil', path: '/' },
-    { name: 'Catalogue Produits', path: '/catalogue' },
+    { name: 'Catalogue', path: '/catalogue' },
+    { name: 'Offres d\'Emploi', path: '/carrieres' },
     { name: 'Nos Agences', path: '/#agences' },
     { name: 'Pourquoi Nous', path: '/#pourquoi-nous' },
-    { name: 'Témoignages', path: '/#temoignages' },
     { name: 'FAQ', path: '/#faq' },
   ];
 

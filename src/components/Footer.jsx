@@ -123,6 +123,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-slate-400">
               <li><Link to="/" className="hover:text-emerald-400 transition-colors">Accueil</Link></li>
               <li><Link to="/catalogue" className="hover:text-emerald-400 transition-colors">Catalogue Produits (270)</Link></li>
+              <li><Link to="/carrieres" className="hover:text-emerald-400 transition-colors font-semibold text-emerald-400">Carrières & Offres d'Emploi</Link></li>
               <li><a href="/#agences" className="hover:text-emerald-400 transition-colors">Nos Agences</a></li>
               <li><a href="/#pourquoi-nous" className="hover:text-emerald-400 transition-colors">Pourquoi Nous</a></li>
               <li><a href="/#faq" className="hover:text-emerald-400 transition-colors">F.A.Q</a></li>

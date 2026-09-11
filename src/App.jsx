@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import WhatsAppModal from './components/WhatsAppModal';
 import HomePage from './pages/HomePage';
 import CatalogPage from './pages/CatalogPage';
+import JobsPage from './pages/JobsPage';
+import { AuthProvider } from './context/AuthContext';
 
 function ScrollToHashElement() {
   const { hash } = useLocation();
@@ -38,34 +40,48 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
-      <ScrollToHashElement />
-      <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-emerald-500 selection:text-white">
-        
-        <Navbar onOpenWhatsAppModal={handleOpenModal} />
+    <AuthProvider>
+      <BrowserRouter>
+        <ScrollToHashElement />
+        <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-emerald-500 selection:text-white">
+          
+          <Navbar onOpenWhatsAppModal={handleOpenModal} />
 
-        <div className="flex-1">
-          <Routes>
-            <Route 
-              path="/" 
-              element={<HomePage onOpenWhatsAppModal={handleOpenModal} />} 
-            />
-            <Route 
-              path="/catalogue" 
-              element={<CatalogPage onOpenWhatsAppModal={handleOpenModal} />} 
-            />
-          </Routes>
+          <div className="flex-1">
+            <Routes>
+              <Route 
+                path="/" 
+                element={<HomePage onOpenWhatsAppModal={handleOpenModal} />} 
+              />
+              <Route 
+                path="/catalogue" 
+                element={<CatalogPage onOpenWhatsAppModal={handleOpenModal} />} 
+              />
+              <Route 
+                path="/carrieres" 
+                element={<JobsPage />} 
+              />
+              <Route 
+                path="/jobs" 
+                element={<JobsPage />} 
+              />
+              <Route 
+                path="/offres" 
+                element={<JobsPage />} 
+              />
+            </Routes>
+          </div>
+
+          <Footer />
+
+          <WhatsAppModal
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            selectedProduct={selectedProduct}
+          />
+
         </div>
-
-        <Footer />
-
-        <WhatsAppModal
-          isOpen={isModalOpen}
-          onClose={handleCloseModal}
-          selectedProduct={selectedProduct}
-        />
-
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
