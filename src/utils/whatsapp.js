@@ -41,6 +41,7 @@ export function buildWhatsAppUrl({
   phone = '',
   deliveryMode = 'Livraison sur site',
   address = '',
+  paymentInfo = '',
   targetPhone = OFFICIAL_WHATSAPP_NUMBER
 }) {
   const unitPriceFormatted = formatPrice(product?.prix || 0);
@@ -60,6 +61,10 @@ export function buildWhatsAppUrl({
     `• *Téléphone WhatsApp* : ${phone}`,
     `• *Mode de reception* : ${deliveryMode}`
   ];
+
+  if (paymentInfo) {
+    messageLines.push(`• *Mode de règlement* : ${paymentInfo}`);
+  }
 
   if (deliveryMode === 'Livraison sur site' && address.trim()) {
     messageLines.push(`• *Adresse de livraison* : ${address.trim()}`);

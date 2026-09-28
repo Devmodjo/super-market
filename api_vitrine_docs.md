@@ -9,6 +9,32 @@ L'URL de base pour l'API est : **`https://erp.super-market.pro`** (ou `http://12
 
 ---
 
+## 0. Catalogue Produits et Stock en Temps Réel
+
+Ce point de terminaison ne nécessite aucune authentification. Il alimente la page Catalogue et l'aperçu produits du site vitrine.
+
+### 0.1 Liste des produits et stocks
+* **Endpoint** : `GET /api/public/products/`
+* **Description** : Renvoie la liste des articles actifs avec leur prix de vente, catégorie et stock actuel disponible.
+* **Format de réponse (200 OK)** :
+```json
+[
+  {
+    "id": 14,
+    "reference": "ART014",
+    "nom": "Riz Ngonda 25% 50KG",
+    "categorie": "Riz & Céréales",
+    "conditionnement": "Unité",
+    "prix": 19700,
+    "quantite_en_stock": 25,
+    "en_stock": true,
+    "image": "https://erp.super-market.pro/media/products/riz_ngonda.webp"
+  }
+]
+```
+
+---
+
 ## 1. Offres d'Emploi Publiques
 
 Ces points de terminaison ne nécessitent aucune authentification.

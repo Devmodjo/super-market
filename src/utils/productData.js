@@ -1,9 +1,9 @@
-import rawProducts from '../../produits_supermarket.json';
-
 /**
- * All supermarket products loaded from JSON
+ * Supermarket products utility module
+ * Real products are loaded live from the ERP API (/api/public/products/)
+ * No hardcoded or dummy products.
  */
-export const products = rawProducts;
+export const products = [];
 
 /**
  * Format price in FCFA with thousands separator
@@ -17,12 +17,14 @@ export function formatPrice(amount) {
 
 /**
  * Get list of all unique categories with product count
+ * @param {Array} sourceProducts
  * @returns {Array<{name: string, count: number}>}
  */
-export function getCategoriesWithCount() {
+export function getCategoriesWithCount(sourceProducts = []) {
   const categoryMap = new Map();
+  const list = Array.isArray(sourceProducts) ? sourceProducts : [];
   
-  rawProducts.forEach(product => {
+  list.forEach(product => {
     const cat = product.categorie || 'Épicerie Générale';
     categoryMap.set(cat, (categoryMap.get(cat) || 0) + 1);
   });
@@ -39,11 +41,13 @@ export function getCategoriesWithCount() {
 /**
  * Get products by category name
  * @param {string} category 
+ * @param {Array} sourceProducts
  * @returns {Array}
  */
-export function getProductsByCategory(category) {
-  if (!category || category === 'Toutes') return rawProducts;
-  return rawProducts.filter(p => p.categorie === category);
+export function getProductsByCategory(category, sourceProducts = []) {
+  const list = Array.isArray(sourceProducts) ? sourceProducts : [];
+  if (!category || category === 'Toutes') return list;
+  return list.filter(p => p.categorie === category);
 }
 
 /**
@@ -52,38 +56,52 @@ export function getProductsByCategory(category) {
  * @param {string} options.query - Search query string
  * @param {string} options.category - Category filter
  * @param {string} options.sortBy - Sort mode ('name-asc', 'name-desc', 'price-asc', 'price-desc')
+ * @param {boolean} options.inStockOnly - Filter only available products
+ * @param {Array} options.productsList - Custom source products array
  * @returns {Array} filtered and sorted products
  */
-export function searchProducts({ query = '', category = 'Toutes', sortBy = 'name-asc' } = {}) {
-  let filtered = [...rawProducts];
+export function searchProducts({ 
+  query = '', 
+  category = 'Toutes', 
+  sortBy = 'name-asc', 
+  inStockOnly = false,
+  productsList = [] 
+} = {}) {
+  const source = Array.isArray(productsList) ? productsList : [];
+  let filtered = [...source];
 
-  // 1. Category Filter
+  // 1. Stock Filter (applicable only if stock is tracked)
+  if (inStockOnly) {
+    filtered = filtered.filter(p => p.suivi_stock === false || (p.en_stock !== false && (p.quantite_en_stock === undefined || p.quantite_en_stock > 0)));
+  }
+
+  // 2. Category Filter
   if (category && category !== 'Toutes') {
     filtered = filtered.filter(p => p.categorie === category);
   }
 
-  // 2. Query Filter (Name or Reference)
+  // 3. Query Filter (Name or Reference)
   if (query && query.trim() !== '') {
     const cleanQuery = query.trim().toLowerCase();
     filtered = filtered.filter(p => 
-      p.nom.toLowerCase().includes(cleanQuery) || 
+      (p.nom && p.nom.toLowerCase().includes(cleanQuery)) || 
       (p.reference && p.reference.toLowerCase().includes(cleanQuery)) ||
       (p.categorie && p.categorie.toLowerCase().includes(cleanQuery))
     );
   }
 
-  // 3. Sorting
+  // 4. Sorting
   filtered.sort((a, b) => {
     switch (sortBy) {
       case 'price-asc':
-        return a.prix - b.prix;
+        return (a.prix || 0) - (b.prix || 0);
       case 'price-desc':
-        return b.prix - a.prix;
+        return (b.prix || 0) - (a.prix || 0);
       case 'name-desc':
-        return b.nom.localeCompare(a.nom, 'fr');
+        return (b.nom || '').localeCompare(a.nom || '', 'fr');
       case 'name-asc':
       default:
-        return a.nom.localeCompare(a.nom, 'fr');
+        return (a.nom || '').localeCompare(b.nom || '', 'fr');
     }
   });
 
@@ -93,30 +111,10 @@ export function searchProducts({ query = '', category = 'Toutes', sortBy = 'name
 /**
  * Get featured products for homepage hero & showcase
  * @param {number} limit 
+ * @param {Array} sourceProducts
  * @returns {Array}
  */
-export function getFeaturedProducts(limit = 8) {
-  // Select popular representative items from key food categories
-  const featuredIds = [
-    'art014-riz-ngonda-25-50kg',
-    'art1010-beurre-jadida-450g',
-    'art929-arrachides-5l',
-    'art925-anice-vert-70g',
-    'art287-beurre-vale-d-or-500g-12-detail'
-  ];
-
-  const found = rawProducts.filter(p => featuredIds.includes(p.id));
-  if (found.length >= limit) return found.slice(0, limit);
-
-  // Top up with distinct categories
-  const categorySeen = new Set(found.map(p => p.categorie));
-  for (const p of rawProducts) {
-    if (!categorySeen.has(p.categorie)) {
-      found.push(p);
-      categorySeen.add(p.categorie);
-    }
-    if (found.length >= limit) break;
-  }
-
-  return found.slice(0, limit);
+export function getFeaturedProducts(limit = 8, sourceProducts = []) {
+  const list = Array.isArray(sourceProducts) ? sourceProducts : [];
+  return list.slice(0, limit);
 }

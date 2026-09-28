@@ -7,7 +7,7 @@ const getBaseUrl = () => {
   }
   // Default production URL or local development fallback
   if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
-    return 'https://erp.super-market.pro'; // Or http://127.0.0.1:8000
+    return 'http://127.0.0.1:8000';
   }
   return 'https://erp.super-market.pro';
 };
@@ -98,6 +98,27 @@ export const FALLBACK_JOBS = [
     etat: "publiee"
   }
 ];
+
+// ==========================================
+// API PUBLIC CATALOGUE & STOCK PRODUITS
+// ==========================================
+
+/**
+ * GET /api/public/products/
+ * Fetch live products and real-time stock from ERP
+ */
+export async function getLiveProducts() {
+  try {
+    const response = await apiClient.get('/api/public/products/');
+    if (Array.isArray(response.data) && response.data.length > 0) {
+      return response.data;
+    }
+    return null;
+  } catch (error) {
+    console.warn('ERP product API unavailable, using fallback data:', error.message);
+    return null;
+  }
+}
 
 // ==========================================
 // API PUBLIC OFFRES D'EMPLOI
@@ -239,4 +260,59 @@ export async function logoutCandidate() {
   }
 }
 
+// ==========================================
+// API GESTIONNAIRE DE CATALOGUE & AUTH ERP
+// ==========================================
+
+/**
+ * POST /api/public/auth/login/
+ * Authenticate ERP users (gestionnaire_catalogue, admin, etc.) directly on Vitrine
+ */
+export async function loginErpUser(identifier, password) {
+  const response = await apiClient.post('/api/public/auth/login/', { identifier, password });
+  return response.data;
+}
+
+/**
+ * POST /api/public/catalog/add-product/
+ * Add a new product to showcase catalog (independent of physical stock)
+ */
+export async function addCatalogProduct(productData) {
+  const config = productData instanceof FormData ? {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  } : {};
+  const response = await apiClient.post('/api/public/catalog/add-product/', productData, config);
+  return response.data;
+}
+
+/**
+ * GET /api/public/payment-numbers/
+ * Retrieve current Orange Money configuration with merchant code for payment
+ */
+export async function getPaymentNumbers() {
+  try {
+    const response = await apiClient.get('/api/public/payment-numbers/');
+    return response.data?.payment_numbers;
+  } catch (error) {
+    return {
+      orange_money: {
+        numero: '+237 690 00 00 00',
+        nom: 'Supermarket SARL',
+        code_marchand: '345892',
+        instructions: 'Composez le #150*47*345892*Montant# ou effectuez un paiement marchand via Orange Money.'
+      }
+    };
+  }
+}
+
+/**
+ * POST /api/public/payment-numbers/
+ * Update Orange Money merchant code and configuration (catalogue manager)
+ */
+export async function updatePaymentNumbers(paymentNumbers) {
+  const response = await apiClient.post('/api/public/payment-numbers/', { payment_numbers: paymentNumbers });
+  return response.data;
+}
+
 export default apiClient;
+

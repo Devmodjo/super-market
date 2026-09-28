@@ -1,27 +1,42 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ArrowRight, Sparkles, Filter } from 'lucide-react';
 import ProductCard from './ProductCard';
 import { searchProducts, getCategoriesWithCount } from '../utils/productData';
+import { getLiveProducts } from '../utils/api';
 
 export default function CatalogPreview({ onOpenWhatsAppModal }) {
+  const [productsList, setProductsList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Toutes');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = useMemo(() => {
-    const list = getCategoriesWithCount();
-    return [{ name: 'Toutes', count: 270 }, ...list];
+  useEffect(() => {
+    let isMounted = true;
+    async function loadLive() {
+      const live = await getLiveProducts();
+      if (isMounted && live && Array.isArray(live) && live.length > 0) {
+        setProductsList(live);
+      }
+    }
+    loadLive();
+    return () => { isMounted = false; };
   }, []);
+
+  const categories = useMemo(() => {
+    const list = getCategoriesWithCount(productsList);
+    return [{ name: 'Toutes', count: productsList.length }, ...list];
+  }, [productsList]);
 
   const displayedProducts = useMemo(() => {
     const results = searchProducts({
       query: searchQuery,
       category: selectedCategory,
-      sortBy: 'name-asc'
+      sortBy: 'name-asc',
+      productsList: productsList
     });
     return results.slice(0, 8); // Show top 8 items on preview
-  }, [searchQuery, selectedCategory]);
+  }, [searchQuery, selectedCategory, productsList]);
 
   return (
     <section className="py-20 bg-slate-50 relative border-b border-slate-200">
@@ -46,7 +61,7 @@ export default function CatalogPreview({ onOpenWhatsAppModal }) {
             to="/catalogue"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/30 transition-all shrink-0 self-start md:self-auto"
           >
-            <span>Voir l'intégralité du catalogue (270)</span>
+            <span>Voir l'intégralité du catalogue ({productsList.length})</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -125,7 +140,7 @@ export default function CatalogPreview({ onOpenWhatsAppModal }) {
             to="/catalogue"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-base shadow-xl transition-all hover:scale-105"
           >
-            <span>Explorer tout le catalogue (270 articles)</span>
+            <span>Explorer tout le catalogue ({productsList.length} articles)</span>
             <ArrowRight className="w-5 h-5 text-emerald-400" />
           </Link>
         </div>

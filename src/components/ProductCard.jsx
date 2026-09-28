@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MessageSquare, Package, Tag } from 'lucide-react';
+import { MessageSquare, Package, CheckCircle2, AlertTriangle, XCircle } from 'lucide-react';
 import { formatPrice } from '../utils/productData';
 import { getCategoryStyle } from '../utils/categoryIcons';
 
@@ -10,6 +10,11 @@ export default function ProductCard({ product, onOrder }) {
   const categoryStyle = getCategoryStyle(product.categorie);
   const IconComponent = categoryStyle.icon;
 
+  const imageUrl = product.image_url || product.image;
+  const isStockTracked = product.suivi_stock !== false;
+  const isOutOfStock = isStockTracked && (product.en_stock === false || (typeof product.quantite_en_stock === 'number' && product.quantite_en_stock <= 0));
+  const stockQuantity = isStockTracked && typeof product.quantite_en_stock === 'number' ? product.quantite_en_stock : null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 15 }}
@@ -17,32 +22,65 @@ export default function ProductCard({ product, onOrder }) {
       viewport={{ once: true }}
       whileHover={{ y: -4 }}
       transition={{ duration: 0.3 }}
-      className="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 hover:shadow-xl hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+      className={`bg-white rounded-2xl p-4 shadow-sm border transition-all duration-300 flex flex-col justify-between group relative overflow-hidden ${
+        isOutOfStock 
+          ? 'border-slate-200/60 opacity-90' 
+          : 'border-slate-200/80 hover:shadow-xl hover:border-emerald-400'
+      }`}
     >
       <div>
-        {/* Card Header Visual Placeholder */}
-        <div className={`w-full h-36 rounded-xl bg-gradient-to-br ${categoryStyle.gradient} p-4 flex flex-col justify-between relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-300 shadow-inner`}>
-          
-          {/* Subtle Decorative Circle Overlay */}
-          <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-sm pointer-events-none" />
-          
+        {/* Card Header Visual (Image or Gradient placeholder) */}
+        <div className={`w-full h-36 rounded-xl overflow-hidden relative group-hover:scale-[1.02] transition-transform duration-300 shadow-inner flex flex-col justify-between p-3 ${
+          imageUrl ? 'bg-slate-100' : `bg-gradient-to-br ${categoryStyle.gradient}`
+        }`}>
+          {imageUrl ? (
+            <img 
+              src={imageUrl} 
+              alt={product.nom}
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              loading="lazy"
+            />
+          ) : (
+            <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-sm pointer-events-none" />
+          )}
+
+          {/* Top badges bar */}
           <div className="flex items-center justify-between relative z-10">
             {/* Reference Badge */}
-            <span className="px-2.5 py-1 rounded-md bg-black/30 backdrop-blur-md text-white font-mono text-[10px] font-bold tracking-wider uppercase">
+            <span className="px-2 py-0.5 rounded-md bg-black/50 backdrop-blur-md text-white font-mono text-[10px] font-bold tracking-wider uppercase">
               {product.reference || 'ART'}
             </span>
 
-            {/* Category Icon */}
-            <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
-              <IconComponent className="w-4 h-4" />
-            </div>
+            {/* Stock Badge: Displayed ONLY if stock is physically tracked in ERP */}
+            {isStockTracked ? (
+              isOutOfStock ? (
+                <span className="px-2 py-0.5 rounded-full bg-red-600/90 backdrop-blur-md text-white font-bold text-[10px] flex items-center gap-1 shadow-sm">
+                  <XCircle className="w-3 h-3" />
+                  <span>Rupture</span>
+                </span>
+              ) : stockQuantity !== null && stockQuantity <= 5 ? (
+                <span className="px-2 py-0.5 rounded-full bg-amber-500/90 backdrop-blur-md text-white font-bold text-[10px] flex items-center gap-1 shadow-sm">
+                  <AlertTriangle className="w-3 h-3" />
+                  <span>Reste {stockQuantity}</span>
+                </span>
+              ) : (
+                <span className="px-2 py-0.5 rounded-full bg-emerald-600/90 backdrop-blur-md text-white font-bold text-[10px] flex items-center gap-1 shadow-sm">
+                  <CheckCircle2 className="w-3 h-3" />
+                  <span>En stock</span>
+                </span>
+              )
+            ) : null}
           </div>
 
-          {/* Product Category Label */}
-          <div className="relative z-10">
-            <span className="inline-block px-2.5 py-0.5 rounded-full bg-white/90 text-slate-900 font-bold text-[10px] uppercase tracking-wider">
-              {categoryStyle.badge}
+          {/* Bottom badge: Category */}
+          <div className="relative z-10 flex items-center justify-between">
+            <span className="inline-block px-2.5 py-0.5 rounded-full bg-white/95 text-slate-900 font-bold text-[10px] uppercase tracking-wider shadow-sm">
+              {categoryStyle.badge || product.categorie || 'Article'}
             </span>
+
+            <div className="w-7 h-7 rounded-lg bg-black/40 backdrop-blur-md flex items-center justify-center text-white">
+              <IconComponent className="w-3.5 h-3.5" />
+            </div>
           </div>
         </div>
 
@@ -55,10 +93,17 @@ export default function ProductCard({ product, onOrder }) {
             {product.nom}
           </h3>
 
-          {/* Conditionnement Badge */}
-          <div className="flex items-center gap-1 text-slate-500 text-xs font-medium pt-0.5">
-            <Package className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-            <span>Cond. : <strong className="text-slate-700 font-semibold">{product.conditionnement || 'Unité'}</strong></span>
+          {/* Conditionnement + Stock Details */}
+          <div className="flex items-center justify-between text-slate-500 text-xs font-medium pt-0.5">
+            <div className="flex items-center gap-1">
+              <Package className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+              <span>Cond. : <strong className="text-slate-700 font-semibold">{product.conditionnement || 'Unité'}</strong></span>
+            </div>
+            {isStockTracked && stockQuantity !== null && (
+              <span className={`text-[11px] font-semibold ${isOutOfStock ? 'text-red-500' : 'text-emerald-600'}`}>
+                {stockQuantity} dispo{stockQuantity > 1 ? 's' : ''}
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -72,13 +117,22 @@ export default function ProductCard({ product, onOrder }) {
           </span>
         </div>
 
-        <button
-          onClick={() => onOrder?.(product)}
-          className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all transform active:scale-95 shrink-0"
-        >
-          <MessageSquare className="w-3.5 h-3.5 fill-white" />
-          <span>Commander</span>
-        </button>
+        {isOutOfStock ? (
+          <button
+            disabled
+            className="px-3.5 py-2 rounded-xl bg-slate-200 text-slate-400 font-bold text-xs flex items-center gap-1.5 cursor-not-allowed shrink-0"
+          >
+            <span>Épuisé</span>
+          </button>
+        ) : (
+          <button
+            onClick={() => onOrder?.(product)}
+            className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all transform active:scale-95 shrink-0"
+          >
+            <MessageSquare className="w-3.5 h-3.5 fill-white" />
+            <span>Commander</span>
+          </button>
+        )}
       </div>
     </motion.div>
   );

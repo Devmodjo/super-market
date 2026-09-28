@@ -20,7 +20,7 @@ export default function FAQ() {
     },
     {
       q: "Quels sont vos modes de règlement acceptés ?",
-      a: "Vous pouvez régler au moment de la livraison ou du retrait en agence : en espèces (FCFA) ou par transfert Mobile Money (Orange Money, MTN Mobile Money)."
+      a: "Vous pouvez régler au moment de la livraison ou du retrait en agence : en espèces (FCFA) ou par Orange Money (Code Marchand ou transfert direct)."
     },
     {
       q: "Proposez-vous des tarifs préférentiels pour les achats en gros ?",

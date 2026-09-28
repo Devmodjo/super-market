@@ -16,39 +16,93 @@ import SEOHead from '../components/SEOHead';
 import JSONLD from '../components/JSONLD';
 import ProductCard from '../components/ProductCard';
 import { searchProducts, getCategoriesWithCount } from '../utils/productData';
+import { getLiveProducts } from '../utils/api';
+import { RefreshCw, CheckCircle2, Loader2, PlusCircle, Smartphone } from 'lucide-react';
+import { useCustomerAuth } from '../context/CustomerAuthContext';
+import AddCatalogProductModal from '../components/AddCatalogProductModal';
+import PaymentConfigModal from '../components/PaymentConfigModal';
 
 const ITEMS_PER_PAGE = 24;
 
 export default function CatalogPage({ onOpenWhatsAppModal }) {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  // State
+  // Dynamic Products List (ERP Live strictly, no hardcoded mock products)
+  const [productsList, setProductsList] = useState([]);
+  const [isLiveSync, setIsLiveSync] = useState(false);
+  const [isLoadingLive, setIsLoadingLive] = useState(true);
+
+  // Customer & ERP Auth
+  const { isCatalogueManager } = useCustomerAuth();
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isPaymentConfigOpen, setIsPaymentConfigOpen] = useState(false);
+
+  // Filters State
   const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '');
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('categorie') || 'Toutes');
   const [sortBy, setSortBy] = useState('name-asc');
+  const [inStockOnly, setInStockOnly] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
-  // Categories list
+  const handleProductAdded = async () => {
+    try {
+      const liveProducts = await getLiveProducts();
+      if (liveProducts && Array.isArray(liveProducts) && liveProducts.length > 0) {
+        setProductsList(liveProducts);
+        setIsLiveSync(true);
+      }
+    } catch (e) {
+      console.warn('Could not reload live products:', e);
+    }
+  };
+
+  // Fetch live products from ERP
+  useEffect(() => {
+    let isMounted = true;
+    async function loadLiveProducts() {
+      setIsLoadingLive(true);
+      try {
+        const liveProducts = await getLiveProducts();
+        if (isMounted && liveProducts && Array.isArray(liveProducts) && liveProducts.length > 0) {
+          setProductsList(liveProducts);
+          setIsLiveSync(true);
+        }
+      } catch (err) {
+        console.warn('Could not sync live products:', err);
+      } finally {
+        if (isMounted) setIsLoadingLive(false);
+      }
+    }
+
+    loadLiveProducts();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  // Categories list based on active products
   const categories = useMemo(() => {
-    const list = getCategoriesWithCount();
+    const list = getCategoriesWithCount(productsList);
     const totalCount = list.reduce((sum, cat) => sum + cat.count, 0);
     return [{ name: 'Toutes', count: totalCount }, ...list];
-  }, []);
+  }, [productsList]);
 
   // Filtered & sorted products
   const filteredProducts = useMemo(() => {
     return searchProducts({
       query: searchQuery,
       category: selectedCategory,
-      sortBy: sortBy
+      sortBy: sortBy,
+      inStockOnly: inStockOnly,
+      productsList: productsList
     });
-  }, [searchQuery, selectedCategory, sortBy]);
+  }, [searchQuery, selectedCategory, sortBy, inStockOnly, productsList]);
 
   // Reset to page 1 when filter/search changes
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, selectedCategory, sortBy]);
+  }, [searchQuery, selectedCategory, sortBy, inStockOnly]);
 
   // Pagination calculation
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE) || 1;
@@ -97,9 +151,24 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
           {/* Page Headline Header */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 mb-8">
             <div className="max-w-3xl">
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
-                Épicerie & Agro-Alimentaire
-              </span>
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200">
+                  Épicerie & Agro-Alimentaire
+                </span>
+
+                {/* ERP Live Stock Sync Status Indicator */}
+                {isLiveSync ? (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>ERP Connecté (Stock en direct)</span>
+                  </span>
+                ) : isLoadingLive ? (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-medium">
+                    <Loader2 className="w-3 h-3 animate-spin text-emerald-600" />
+                    <span>Connexion ERP...</span>
+                  </span>
+                ) : null}
+              </div>
               <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 tracking-tight">
                 Catalogue Produits SUPERMARKET
               </h1>
@@ -117,7 +186,7 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
             </div>
           </div>
 
-          {/* Main Controls Layout: Search + Mobile Filter Button + Sort */}
+          {/* Main Controls Layout: Search + Mobile Filter Button + In-Stock Toggle + Sort */}
           <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8">
             
             {/* Search Input */}
@@ -140,18 +209,58 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
               )}
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Catalogue Manager Controls */}
+              {isCatalogueManager && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setIsAddModalOpen(true)}
+                    className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold text-xs shadow-md hover:shadow-lg transition-all"
+                    title="Ajouter un article au catalogue vitrine"
+                  >
+                    <PlusCircle className="w-4 h-4 text-slate-950" />
+                    <span>+ Ajouter un produit</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsPaymentConfigOpen(true)}
+                    className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs shadow-md hover:shadow-lg transition-all"
+                    title="Configurer le Code Marchand et le numéro Orange Money"
+                  >
+                    <Smartphone className="w-4 h-4 text-white" />
+                    <span>Orange Money Marchand</span>
+                  </button>
+                </>
+              )}
+
+              {/* In-Stock Filter Toggle - réservé au gestionnaire de catalogue */}
+              {isCatalogueManager && (
+                <button
+                  type="button"
+                  onClick={() => setInStockOnly(!inStockOnly)}
+                  className={`flex items-center gap-2 px-4 py-3 rounded-2xl border text-xs font-bold transition-all shadow-sm ${
+                    inStockOnly 
+                      ? 'bg-emerald-600 border-emerald-600 text-white shadow-emerald-600/20' 
+                      : 'bg-white border-slate-200 text-slate-700 hover:border-emerald-400'
+                  }`}
+                >
+                  <CheckCircle2 className={`w-4 h-4 ${inStockOnly ? 'text-white' : 'text-emerald-600'}`} />
+                  <span>En stock uniquement</span>
+                </button>
+              )}
+
               {/* Mobile Filter Toggle */}
               <button
                 onClick={() => setIsMobileFilterOpen(true)}
-                className="lg:hidden flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-sm"
+                className="lg:hidden flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-white border border-slate-200 text-slate-800 text-xs font-bold shadow-sm"
               >
                 <SlidersHorizontal className="w-4 h-4 text-emerald-600" />
                 <span>Filtres ({selectedCategory === 'Toutes' ? 'Tous' : '1'})</span>
               </button>
 
               {/* Sort Select Dropdown */}
-              <div className="flex items-center gap-2 bg-white border border-slate-200 px-3.5 py-3 rounded-2xl shadow-sm">
+              <div className="flex items-center gap-2 bg-white border border-slate-200 px-3.5 py-2.5 rounded-2xl shadow-sm">
                 <ArrowUpDown className="w-4 h-4 text-slate-400 shrink-0" />
                 <span className="text-xs font-semibold text-slate-500 hidden sm:inline">Trier par:</span>
                 <select
@@ -375,6 +484,20 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
           </div>
         )}
       </AnimatePresence>
+
+      {/* Catalogue Manager Add Product Modal */}
+      <AddCatalogProductModal
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+        onProductAdded={handleProductAdded}
+        existingCategories={categories}
+      />
+
+      {/* Catalogue Manager Payment Configuration Modal */}
+      <PaymentConfigModal
+        isOpen={isPaymentConfigOpen}
+        onClose={() => setIsPaymentConfigOpen(false)}
+      />
     </>
   );
 }
