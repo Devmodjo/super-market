@@ -15,6 +15,7 @@ import {
 import SEOHead from '../components/SEOHead';
 import JSONLD from '../components/JSONLD';
 import ProductCard from '../components/ProductCard';
+import { ProductGridSkeleton } from '../components/ProductCardSkeleton';
 import { searchProducts, getCategoriesWithCount } from '../utils/productData';
 import { getLiveProducts } from '../utils/api';
 import { RefreshCw, CheckCircle2, Loader2, PlusCircle, Smartphone } from 'lucide-react';
@@ -320,11 +321,18 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
               
               {/* Active Filter Chips Bar & Results count */}
               <div className="flex items-center justify-between bg-white px-5 py-3 rounded-2xl border border-slate-200/80 text-xs">
-                <span className="text-slate-600 font-medium">
-                  Affichage de <strong className="text-slate-900">{filteredProducts.length > 0 ? startIndex + 1 : 0}</strong> à <strong className="text-slate-900">{Math.min(startIndex + ITEMS_PER_PAGE, filteredProducts.length)}</strong> sur <strong className="text-slate-900">{filteredProducts.length}</strong> produits
-                </span>
+                {isLoadingLive ? (
+                  <div className="flex items-center gap-2 text-slate-500 font-medium">
+                    <Loader2 className="w-3.5 h-3.5 animate-spin text-emerald-600" />
+                    <span>Chargement du catalogue en direct...</span>
+                  </div>
+                ) : (
+                  <span className="text-slate-600 font-medium">
+                    Affichage de <strong className="text-slate-900">{filteredProducts.length > 0 ? startIndex + 1 : 0}</strong> à <strong className="text-slate-900">{Math.min(startIndex + ITEMS_PER_PAGE, filteredProducts.length)}</strong> sur <strong className="text-slate-900">{filteredProducts.length}</strong> produits
+                  </span>
+                )}
 
-                {selectedCategory !== 'Toutes' && (
+                {!isLoadingLive && selectedCategory !== 'Toutes' && (
                   <button
                     onClick={() => handleCategorySelect('Toutes')}
                     className="text-emerald-700 hover:text-emerald-800 font-bold flex items-center gap-1"
@@ -335,8 +343,16 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
                 )}
               </div>
 
-              {/* Product Cards Grid */}
-              {paginatedProducts.length > 0 ? (
+              {/* Product Cards Grid or Skeleton */}
+              {isLoadingLive ? (
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-emerald-50/80 border border-emerald-100 text-emerald-800 text-xs font-medium">
+                    <Loader2 className="w-4 h-4 animate-spin text-emerald-600 shrink-0" />
+                    <span>Synchronisation des rayons et des prix en direct avec le magasin...</span>
+                  </div>
+                  <ProductGridSkeleton count={12} columns="grid-cols-1 sm:grid-cols-2 xl:grid-cols-3" />
+                </div>
+              ) : paginatedProducts.length > 0 ? (
                 <motion.div 
                   className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"
                   initial="hidden"
@@ -379,7 +395,7 @@ export default function CatalogPage({ onOpenWhatsAppModal }) {
               )}
 
               {/* Pagination Controls */}
-              {totalPages > 1 && (
+              {!isLoadingLive && totalPages > 1 && (
                 <div className="flex items-center justify-between bg-white px-6 py-4 rounded-2xl border border-slate-200/80 shadow-sm pt-4">
                   <button
                     onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}

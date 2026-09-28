@@ -1,22 +1,33 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, ArrowRight, Sparkles, Filter } from 'lucide-react';
+import { Search, ArrowRight, Sparkles, Filter, Loader2 } from 'lucide-react';
 import ProductCard from './ProductCard';
+import { ProductGridSkeleton } from './ProductCardSkeleton';
 import { searchProducts, getCategoriesWithCount } from '../utils/productData';
 import { getLiveProducts } from '../utils/api';
 
 export default function CatalogPreview({ onOpenWhatsAppModal }) {
   const [productsList, setProductsList] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('Toutes');
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     let isMounted = true;
     async function loadLive() {
-      const live = await getLiveProducts();
-      if (isMounted && live && Array.isArray(live) && live.length > 0) {
-        setProductsList(live);
+      setIsLoading(true);
+      try {
+        const live = await getLiveProducts();
+        if (isMounted && live && Array.isArray(live) && live.length > 0) {
+          setProductsList(live);
+        }
+      } catch (err) {
+        console.warn('Erreur chargement live:', err);
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
       }
     }
     loadLive();
@@ -106,8 +117,16 @@ export default function CatalogPreview({ onOpenWhatsAppModal }) {
           </div>
         </div>
 
-        {/* Product Cards Grid */}
-        {displayedProducts.length > 0 ? (
+        {/* Product Cards Grid or Skeleton */}
+        {isLoading ? (
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-slate-500 text-xs font-semibold">
+              <Loader2 className="w-4 h-4 animate-spin text-emerald-600" />
+              <span>Chargement des produits en direct du magasin...</span>
+            </div>
+            <ProductGridSkeleton count={8} columns="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" />
+          </div>
+        ) : displayedProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {displayedProducts.map((product) => (
               <ProductCard
