@@ -14,7 +14,7 @@ import {
   getDoc,
   serverTimestamp
 } from '../firebase';
-import { loginErpUser } from '../utils/api';
+import { loginErpUser, API_BASE_URL } from '../utils/api';
 import axios from 'axios';
 
 const CustomerAuthContext = createContext();
@@ -50,7 +50,7 @@ export function CustomerAuthProvider({ children }) {
   // Helper to persist client in ERP database
   const syncToErp = async (profileData, email) => {
     try {
-      await axios.post('http://127.0.0.1:8000/api/public/clients/register/', {
+      await axios.post(`${API_BASE_URL}/api/public/clients/register/`, {
         nom: profileData.nom || '',
         prenom: profileData.prenom || '',
         telephone: profileData.telephone || '',

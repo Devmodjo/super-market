@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { Capacitor } from '@capacitor/core';
+import { App as CapApp } from '@capacitor/app';
+import { StatusBar, Style } from '@capacitor/status-bar';
+import { SplashScreen } from '@capacitor/splash-screen';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppModal from './components/WhatsAppModal';
@@ -23,6 +27,40 @@ function ScrollToHashElement() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [hash]);
+
+  return null;
+}
+
+function MobileHandler({ isModalOpen, closeModal, isAuthModalOpen, closeAuthModal }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+
+    // Configuration barre de statut et écran de chargement natifs
+    StatusBar.setOverlaysWebView({ overlay: false }).catch(() => {});
+    StatusBar.setStyle({ style: Style.Dark }).catch(() => {});
+    StatusBar.setBackgroundColor({ color: '#059669' }).catch(() => {});
+    SplashScreen.hide().catch(() => {});
+
+    // Gestion de la touche retour physique Android
+    const backListener = CapApp.addListener('backButton', () => {
+      if (isModalOpen) {
+        closeModal();
+      } else if (isAuthModalOpen) {
+        closeAuthModal();
+      } else if (location.pathname !== '/') {
+        navigate(-1);
+      } else {
+        CapApp.exitApp();
+      }
+    });
+
+    return () => {
+      backListener.then(handle => handle.remove()).catch(() => {});
+    };
+  }, [isModalOpen, isAuthModalOpen, location.pathname, navigate, closeModal, closeAuthModal]);
 
   return null;
 }
@@ -53,6 +91,12 @@ export default function App() {
       <CustomerAuthProvider>
         <BrowserRouter>
           <ScrollToHashElement />
+          <MobileHandler
+            isModalOpen={isModalOpen}
+            closeModal={handleCloseModal}
+            isAuthModalOpen={isAuthModalOpen}
+            closeAuthModal={() => setIsAuthModalOpen(false)}
+          />
           <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-emerald-500 selection:text-white">
             
             <Navbar 

@@ -17,8 +17,12 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-lg shadow-emerald-600/30">
-                <ShoppingBag className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center p-1.5 shadow-md shadow-emerald-500/20">
+                <img 
+                  src="/app-icon.png" 
+                  alt="Logo SUPERMARKET" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-extrabold text-2xl tracking-tight text-white">
                 SUPER<span className="text-emerald-500">MARKET</span>

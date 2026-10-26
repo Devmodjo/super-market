@@ -32,17 +32,22 @@ export default function Navbar({ onOpenWhatsAppModal, onOpenAuthModal }) {
   ];
 
   return (
-    <header className={`sticky top-0 z-40 transition-all duration-300 ${
-      isScrolled ? 'glass-header shadow-xs py-1.5' : 'bg-white/95 backdrop-blur-md py-2 border-b border-slate-100/90'
-    }`}>
+    <header 
+      style={{ paddingTop: 'max(env(safe-area-inset-top, 0px), 0px)' }}
+      className={`sticky top-0 z-40 transition-all duration-300 ${
+        isScrolled ? 'glass-header shadow-xs py-1.5' : 'bg-white/95 backdrop-blur-md py-2 border-b border-slate-100/90'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-xs group-hover:scale-105 transition-transform duration-300">
-              <ShoppingBag className="w-4 h-4" />
-            </div>
+            <img 
+              src="/app-icon.png" 
+              alt="Logo SUPERMARKET" 
+              className="w-8 h-8 object-contain group-hover:scale-105 transition-transform duration-300"
+            />
             <div>
               <span className="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-brand-700 transition-colors">
                 SUPER<span className="text-brand-600">MARKET</span>

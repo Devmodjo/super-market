@@ -1,11 +1,17 @@
 import axios from 'axios';
+import { Capacitor } from '@capacitor/core';
+import fallbackProductsList from '../../produits_supermarket.json';
 
 // Base URL configuration for ERP API
 const getBaseUrl = () => {
+  // If running inside Capacitor native mobile app (Android / iOS), ALWAYS connect to production ERP
+  if (Capacitor.isNativePlatform() || (typeof window !== 'undefined' && (window.location.protocol === 'capacitor:' || window.Capacitor?.isNativePlatform?.()))) {
+    return 'https://erp.super-market.pro';
+  }
   if (import.meta.env.VITE_API_BASE_URL) {
     return import.meta.env.VITE_API_BASE_URL;
   }
-  // Default production URL or local development fallback
+  // Local development fallback in desktop browser
   if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
     return 'http://127.0.0.1:8000';
   }
@@ -111,13 +117,41 @@ export async function getLiveProducts() {
   try {
     const response = await apiClient.get('/api/public/products/');
     if (Array.isArray(response.data) && response.data.length > 0) {
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('cached_erp_products', JSON.stringify(response.data));
+        } catch (_) {}
+      }
       return response.data;
     }
-    return null;
   } catch (error) {
-    console.warn('ERP product API unavailable, using fallback data:', error.message);
-    return null;
+    console.warn('ERP product API request error:', error.message);
   }
+
+  // 1. Try local storage cache
+  if (typeof window !== 'undefined') {
+    try {
+      const cached = localStorage.getItem('cached_erp_products');
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
+      }
+    } catch (_) {}
+  }
+
+  // 2. Ultimate offline fallback from packaged JSON
+  if (Array.isArray(fallbackProductsList) && fallbackProductsList.length > 0) {
+    return fallbackProductsList.map((item, idx) => ({
+      ...item,
+      id: item.id || idx + 1,
+      en_stock: true,
+      quantite_en_stock: 10,
+    }));
+  }
+
+  return null;
 }
 
 // ==========================================

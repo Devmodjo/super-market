@@ -1,0 +1,1 @@
+import{W as n}from"./index-xtwm0ojD.js";import"https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";import"https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";import"https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";class p extends n{async show(e){}async hide(e){}}export{p as SplashScreenWeb};
